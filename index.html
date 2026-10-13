@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MarketPulse — clear financial information: markets overview, asset categories, and plain-language learning.">
+  <title>MarketPulse — Financial Information</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="MarketPulse home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">MarketPulse</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#markets">Markets</a></li>
+          <li><a href="#assets">Assets</a></li>
+          <li><a href="#learn">Learn</a></li>
+          <li><a href="#glossary">Glossary</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☾</span>
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+      </button>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile" hidden>
+      <ul>
+        <li><a href="#markets">Markets</a></li>
+        <li><a href="#assets">Assets</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="eyebrow">Financial information, clearly</p>
+        <h1>Understand markets.<br><span class="accent">Make sense of money.</span></h1>
+        <p class="hero-lead">
+          MarketPulse presents major indices, asset categories, and plain-language explainers —
+          so you can follow the conversation without the jargon fog.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#markets">View markets</a>
+          <a class="btn btn-ghost" href="#learn">Start learning</a>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="markets section" id="markets" aria-labelledby="markets-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="markets-heading">Markets overview</h2>
+          <p class="section-sub" id="marketsLabel">Illustrative sample data — not live prices. For educational display only.</p>
+          <p class="markets-updated" id="marketsUpdated" hidden>
+            Last updated: <time id="marketsUpdatedTime" datetime=""></time>
+          </p>
+        </div>
+        <div class="market-grid" id="marketGrid" role="list">
+          <!-- Cards injected / enhanced by script; also present in HTML for no-JS -->
+          <article class="market-card" role="listitem" data-id="sp500" data-change="up">
+            <header class="market-card-head">
+              <h3>S&amp;P 500</h3>
+              <span class="market-region">US</span>
+            </header>
+            <p class="market-price" data-animate="5782.40">5,782.40</p>
+            <p class="market-change up" aria-label="Change up 0.42 percent">
+              <span class="change-arrow" aria-hidden="true">▲</span> +0.42%
+            </p>
+          </article>
+          <article class="market-card" role="listitem" data-id="nasdaq" data-change="up">
+            <header class="market-card-head">
+              <h3>Nasdaq Composite</h3>
+              <span class="market-region">US</span>
+            </header>
+            <p class="market-price" data-animate="18412.75">18,412.75</p>
+            <p class="market-change up" aria-label="Change up 0.68 percent">
+              <span class="change-arrow" aria-hidden="true">▲</span> +0.68%
+            </p>
+          </article>
+          <article class="market-card" role="listitem" data-id="hsi" data-change="down">
+            <header class="market-card-head">
+              <h3>Hang Seng</h3>
+              <span class="market-region">HK</span>
+            </header>
+            <p class="market-price" data-animate="20458.30">20,458.30</p>
+            <p class="market-change down" aria-label="Change down 0.35 percent">
+              <span class="change-arrow" aria-hidden="true">▼</span> −0.35%
+            </p>
+          </article>
+          <article class="market-card" role="listitem" data-id="nikkei" data-change="up">
+            <header class="market-card-head">
+              <h3>Nikkei 225</h3>
+              <span class="market-region">JP</span>
+            </header>
+            <p class="market-price" data-animate="38915.20">38,915.20</p>
+            <p class="market-change up" aria-label="Change up 0.21 percent">
+              <span class="change-arrow" aria-hidden="true">▲</span> +0.21%
+            </p>
+          </article>
+          <article class="market-card" role="listitem" data-id="ftse" data-change="down">
+            <header class="market-card-head">
+              <h3>FTSE 100</h3>
+              <span class="market-region">UK</span>
+            </header>
+            <p class="market-price" data-animate="8241.60">8,241.60</p>
+            <p class="market-change down" aria-label="Change down 0.18 percent">
+              <span class="change-arrow" aria-hidden="true">▼</span> −0.18%
+            </p>
+          </article>
+          <article class="market-card" role="listitem" data-id="stoxx50" data-change="up">
+            <header class="market-card-head">
+              <h3>Euro Stoxx 50</h3>
+              <span class="market-region">EU</span>
+            </header>
+            <p class="market-price" data-animate="4928.15">4,928.15</p>
+            <p class="market-change up" aria-label="Change up 0.55 percent">
+              <span class="change-arrow" aria-hidden="true">▲</span> +0.55%
+            </p>
+          </article>
+
+          <article class="market-card" role="listitem" data-id="0700.HK" data-change="down">
+            <header class="market-card-head">
+              <h3>Tencent (0700.HK)</h3>
+              <span class="market-region">HK</span>
+            </header>
+            <p class="market-price" data-animate="412.60">412.60</p>
+            <p class="market-change down" aria-label="Change down 0.48 percent">
+              <span class="change-arrow" aria-hidden="true">▼</span> −0.48%
+            </p>
+          </article>
+
+        </div>
+        <p class="data-note" role="note">
+          <strong>Sample data until refreshed.</strong> Cards load from <code>data/markets.json</code> when available;
+          embedded values above are illustrative fallbacks. Always verify prices with a licensed data provider
+          before making decisions.
+        </p>
+      </div>
+    </section>
+
+    <section class="assets section" id="assets" aria-labelledby="assets-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="assets-heading">Asset categories</h2>
+          <p class="section-sub">The main building blocks of most portfolios, in plain language.</p>
+        </div>
+        <div class="asset-grid">
+          <article class="asset-card">
+            <div class="asset-icon" aria-hidden="true">📈</div>
+            <h3>Stocks</h3>
+            <p>
+              Shares of ownership in companies. Prices move with earnings expectations,
+              interest rates, and investor sentiment. Higher long-term growth potential,
+              with more day-to-day volatility than bonds.
+            </p>
+          </article>
+          <article class="asset-card">
+            <div class="asset-icon" aria-hidden="true">🏦</div>
+            <h3>Bonds</h3>
+            <p>
+              Loans you make to governments or corporations. You typically receive interest
+              and your principal back at maturity. Often used to dampen portfolio swings
+              and provide predictable income.
+            </p>
+          </article>
+          <article class="asset-card">
+            <div class="asset-icon" aria-hidden="true">💱</div>
+            <h3>Forex</h3>
+            <p>
+              The foreign-exchange market, where currencies trade against each other
+              (e.g. USD/JPY). Driven by interest-rate differentials, trade flows, and
+              macroeconomic news. Highly liquid and traded around the clock.
+            </p>
+          </article>
+          <article class="asset-card">
+            <div class="asset-icon" aria-hidden="true">🛢️</div>
+            <h3>Commodities</h3>
+            <p>
+              Physical goods such as oil, gold, copper, and agricultural products.
+              Prices respond to supply, demand, geopolitics, and the dollar. Often used
+              for diversification or inflation hedging.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn section" id="learn" aria-labelledby="learn-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="learn-heading">Learn</h2>
+          <p class="section-sub">Short explainers for concepts you will hear often in finance.</p>
+        </div>
+        <div class="learn-grid">
+          <article class="learn-card">
+            <h3>Inflation</h3>
+            <p>
+              A sustained rise in the general price level — your money buys less over time.
+              Central banks watch inflation closely and may raise interest rates to cool demand
+              when prices climb too fast.
+            </p>
+          </article>
+          <article class="learn-card">
+            <h3>Interest rates</h3>
+            <p>
+              The cost of borrowing and the reward for saving. When policy rates rise,
+              loans become more expensive and bond prices often fall; when rates fall,
+              the opposite tends to occur. Rates influence almost every asset class.
+            </p>
+          </article>
+          <article class="learn-card">
+            <h3>Diversification</h3>
+            <p>
+              Spreading investments across assets, sectors, and regions so that one bad
+              outcome does not dominate results. It does not eliminate risk, but it can
+              smooth the path toward long-term goals.
+            </p>
+          </article>
+          <article class="learn-card">
+            <h3>P/E ratio</h3>
+            <p>
+              Price-to-earnings: share price divided by earnings per share. A higher P/E
+              can mean investors expect faster growth — or that the stock is expensive
+              relative to current profits. Context and peer comparison matter.
+            </p>
+          </article>
+          <article class="learn-card">
+            <h3>Bull &amp; bear markets</h3>
+            <p>
+              A bull market is a prolonged rise in prices; a bear market is a prolonged decline
+              (often cited as a drop of 20% or more from a recent high). Sentiment, earnings,
+              and liquidity all play a role in each phase.
+            </p>
+          </article>
+          <article class="learn-card">
+            <h3>Risk &amp; return</h3>
+            <p>
+              In general, assets that offer higher expected returns come with greater
+              uncertainty and larger drawdowns. Matching risk to your time horizon and
+              need for stability is a core principle of portfolio design.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="glossary section" id="glossary" aria-labelledby="glossary-heading">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="glossary-heading">Glossary</h2>
+          <p class="section-sub">Quick definitions. Filter by keyword to find a term fast.</p>
+        </div>
+        <div class="glossary-controls">
+          <label class="sr-only" for="glossarySearch">Search glossary</label>
+          <input
+            type="search"
+            id="glossarySearch"
+            class="glossary-search"
+            placeholder="Search terms… e.g. yield, ETF, liquidity"
+            autocomplete="off"
+          >
+          <p class="glossary-count" id="glossaryCount" aria-live="polite"></p>
+        </div>
+        <dl class="glossary-list" id="glossaryList">
+          <div class="glossary-item" data-terms="etf exchange traded fund">
+            <dt>ETF</dt>
+            <dd>Exchange-traded fund — a basket of securities that trades on an exchange like a stock, often tracking an index.</dd>
+          </div>
+          <div class="glossary-item" data-terms="yield dividend interest income">
+            <dt>Yield</dt>
+            <dd>Income return on an investment, such as dividends or bond interest, usually expressed as an annual percentage.</dd>
+          </div>
+          <div class="glossary-item" data-terms="liquidity cash trade">
+            <dt>Liquidity</dt>
+            <dd>How quickly an asset can be bought or sold at a fair price without large price impact. Cash is highly liquid; real estate less so.</dd>
+          </div>
+          <div class="glossary-item" data-terms="volatility risk swing">
+            <dt>Volatility</dt>
+            <dd>How much prices bounce around. Higher volatility means larger swings — and often higher perceived risk.</dd>
+          </div>
+          <div class="glossary-item" data-terms="dividend stock income">
+            <dt>Dividend</dt>
+            <dd>A portion of company profits paid to shareholders, usually in cash on a regular schedule.</dd>
+          </div>
+          <div class="glossary-item" data-terms="market cap capitalization size">
+            <dt>Market capitalization</dt>
+            <dd>Share price × shares outstanding — a common measure of a company’s size in the stock market.</dd>
+          </div>
+          <div class="glossary-item" data-terms="bond duration interest rate sensitivity">
+            <dt>Duration</dt>
+            <dd>A measure of how sensitive a bond’s price is to interest-rate changes. Longer duration generally means more rate risk.</dd>
+          </div>
+          <div class="glossary-item" data-terms="blue chip large stable">
+            <dt>Blue chip</dt>
+            <dd>Informal term for large, established companies with a long record of stable earnings and often dividends.</dd>
+          </div>
+          <div class="glossary-item" data-terms="bear market decline crash">
+            <dt>Bear market</dt>
+            <dd>A prolonged decline in market prices, commonly defined as a drop of 20% or more from a recent peak.</dd>
+          </div>
+          <div class="glossary-item" data-terms="bull market rally rise">
+            <dt>Bull market</dt>
+            <dd>A prolonged period of rising prices and generally optimistic investor sentiment.</dd>
+          </div>
+          <div class="glossary-item" data-terms="cpi consumer price index inflation">
+            <dt>CPI</dt>
+            <dd>Consumer Price Index — a widely used measure of inflation based on a basket of goods and services.</dd>
+          </div>
+          <div class="glossary-item" data-terms="fed federal reserve central bank">
+            <dt>Federal Reserve (Fed)</dt>
+            <dd>The central bank of the United States. It sets monetary policy, including the federal funds rate target.</dd>
+          </div>
+        </dl>
+        <p class="glossary-empty" id="glossaryEmpty" hidden>No terms match your search.</p>
+      </div>
+    </section>
+
+    <section class="facts strip" aria-labelledby="facts-heading">
+      <div class="container">
+        <h2 id="facts-heading" class="sr-only">Quick facts</h2>
+        <ul class="facts-list">
+          <li><strong>24/5</strong> Forex trades nearly around the clock on weekdays</li>
+          <li><strong>Diversify</strong> One asset class rarely tells the whole story</li>
+          <li><strong>Horizon</strong> Longer timelines often tolerate more volatility</li>
+          <li><strong>Costs</strong> Fees and taxes compound — keep an eye on both</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>MarketPulse</span>
+      </div>
+      <p class="disclaimer">
+        <strong>Disclaimer:</strong> MarketPulse is an educational and informational website only.
+        Nothing here is financial, investment, tax, or legal advice. Sample market figures are
+        illustrative and may not reflect current prices. Do your own research or consult a
+        qualified professional before making financial decisions.
+      </p>
+      <p class="footer-meta">&copy; <span id="year"></span> MarketPulse. Built as a static demo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
