@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-13T19:54:19+08:00",
+  "updatedAt": "2026-10-13T21:02:32+08:00",
   "source": "yahoo-finance",
-  "label": "Delayed public web quotes \u2014 educational demo, not investment advice",
+  "label": "Delayed public web quotes — educational demo, not investment advice",
   "markets": [
     {
       "id": "sp500",
@@ -9,7 +9,7 @@
       "name": "S&P 500",
       "region": "US",
       "price": 7807.24,
-      "changePercent": 0.54
+      "changePercent": -0.06
     },
     {
       "id": "nasdaq",
@@ -17,7 +17,7 @@
       "name": "Nasdaq Composite",
       "region": "US",
       "price": 27245.9,
-      "changePercent": 0.19
+      "changePercent": -0.44
     },
     {
       "id": "hsi",
@@ -25,7 +25,7 @@
       "name": "Hang Seng",
       "region": "HK",
       "price": 24345.22,
-      "changePercent": 0.55
+      "changePercent": 0.3
     },
     {
       "id": "nikkei",
@@ -40,16 +40,16 @@
       "symbol": "^FTSE",
       "name": "FTSE 100",
       "region": "UK",
-      "price": 10728.18,
-      "changePercent": 1.67
+      "price": 10710.44,
+      "changePercent": 0.51
     },
     {
       "id": "stoxx50",
       "symbol": "^STOXX50E",
       "name": "Euro Stoxx 50",
       "region": "EU",
-      "price": 6200.0,
-      "changePercent": -0.02
+      "price": 6179.24,
+      "changePercent": -0.35
     },
     {
       "id": "0700.HK",
