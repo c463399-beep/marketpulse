@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T15:56:32+08:00",
+  "updatedAt": "2026-10-14T16:54:39+08:00",
   "source": "yahoo-finance",
   "label": "Delayed public web quotes \u2014 educational demo, not investment advice",
   "markets": [
@@ -9,7 +9,7 @@
       "name": "S&P 500",
       "region": "US",
       "price": 7805.45,
-      "changePercent": -0.08
+      "changePercent": -0.02
     },
     {
       "id": "nasdaq",
@@ -17,15 +17,15 @@
       "name": "Nasdaq Composite",
       "region": "US",
       "price": 27204.38,
-      "changePercent": -0.59
+      "changePercent": -0.15
     },
     {
       "id": "hsi",
       "symbol": "^HSI",
       "name": "Hang Seng",
       "region": "HK",
-      "price": 24319.1,
-      "changePercent": 0.2
+      "price": 24314.17,
+      "changePercent": -0.13
     },
     {
       "id": "nikkei",
@@ -40,24 +40,24 @@
       "symbol": "^FTSE",
       "name": "FTSE 100",
       "region": "UK",
-      "price": 10651.63,
-      "changePercent": -0.04
+      "price": 10671.61,
+      "changePercent": 0.2
     },
     {
       "id": "stoxx50",
       "symbol": "^STOXX50E",
       "name": "Euro Stoxx 50",
       "region": "EU",
-      "price": 6204.3,
-      "changePercent": 0.6
+      "price": 6204.55,
+      "changePercent": 0.61
     },
     {
       "id": "0700.HK",
       "symbol": "0700.HK",
       "name": "Tencent (0700.HK)",
       "region": "HK",
-      "price": 424.4,
-      "changePercent": -0.33
+      "price": 423.4,
+      "changePercent": -0.42
     }
   ]
 }
