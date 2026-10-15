@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T10:56:59+08:00",
+  "updatedAt": "2026-10-15T12:00:30+08:00",
   "source": "yahoo-finance",
   "label": "Delayed public web quotes — educational demo, not investment advice",
   "markets": [
@@ -24,16 +24,16 @@
       "symbol": "^HSI",
       "name": "Hang Seng",
       "region": "HK",
-      "price": 24037.1,
-      "changePercent": -1.14
+      "price": 24006.61,
+      "changePercent": -1.26
     },
     {
       "id": "nikkei",
       "symbol": "^N225",
       "name": "Nikkei 225",
       "region": "JP",
-      "price": 64489.06,
-      "changePercent": -4.81
+      "price": 64175.55,
+      "changePercent": -5.27
     },
     {
       "id": "ftse",
