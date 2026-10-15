@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T16:54:10+08:00",
+  "updatedAt": "2026-10-15T17:58:12+08:00",
   "source": "yahoo-finance",
   "label": "Delayed public web quotes — educational demo, not investment advice",
   "markets": [
@@ -40,16 +40,16 @@
       "symbol": "^FTSE",
       "name": "FTSE 100",
       "region": "UK",
-      "price": 10759.0,
-      "changePercent": 0.32
+      "price": 10784.27,
+      "changePercent": 0.55
     },
     {
       "id": "stoxx50",
       "symbol": "^STOXX50E",
       "name": "Euro Stoxx 50",
       "region": "EU",
-      "price": 6144.42,
-      "changePercent": -0.74
+      "price": 6151.81,
+      "changePercent": -0.62
     },
     {
       "id": "0700.HK",
