@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T21:53:44+08:00",
+  "updatedAt": "2026-10-15T22:52:08+08:00",
   "source": "yahoo-finance",
   "label": "Delayed public web quotes \u2014 educational demo, not investment advice",
   "markets": [
@@ -8,16 +8,16 @@
       "symbol": "^GSPC",
       "name": "S&P 500",
       "region": "US",
-      "price": 7679.5,
-      "changePercent": -0.51
+      "price": 7714.56,
+      "changePercent": -0.06
     },
     {
       "id": "nasdaq",
       "symbol": "^IXIC",
       "name": "Nasdaq Composite",
       "region": "US",
-      "price": 26362.26,
-      "changePercent": -1.24
+      "price": 26550.34,
+      "changePercent": -0.53
     },
     {
       "id": "hsi",
@@ -25,7 +25,7 @@
       "name": "Hang Seng",
       "region": "HK",
       "price": 24062.72,
-      "changePercent": -1.16
+      "changePercent": -1.03
     },
     {
       "id": "nikkei",
@@ -40,16 +40,16 @@
       "symbol": "^FTSE",
       "name": "FTSE 100",
       "region": "UK",
-      "price": 10809.87,
-      "changePercent": 0.79
+      "price": 10834.15,
+      "changePercent": 1.02
     },
     {
       "id": "stoxx50",
       "symbol": "^STOXX50E",
       "name": "Euro Stoxx 50",
       "region": "EU",
-      "price": 6137.42,
-      "changePercent": -0.86
+      "price": 6141.48,
+      "changePercent": -0.79
     },
     {
       "id": "0700.HK",
