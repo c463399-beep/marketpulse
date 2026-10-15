@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T12:00:30+08:00",
+  "updatedAt": "2026-10-15T12:52:14+08:00",
   "source": "yahoo-finance",
   "label": "Delayed public web quotes — educational demo, not investment advice",
   "markets": [
@@ -24,16 +24,16 @@
       "symbol": "^HSI",
       "name": "Hang Seng",
       "region": "HK",
-      "price": 24006.61,
-      "changePercent": -1.26
+      "price": 23955.58,
+      "changePercent": -1.47
     },
     {
       "id": "nikkei",
       "symbol": "^N225",
       "name": "Nikkei 225",
       "region": "JP",
-      "price": 64175.55,
-      "changePercent": -5.27
+      "price": 64547.93,
+      "changePercent": -4.72
     },
     {
       "id": "ftse",
@@ -56,8 +56,8 @@
       "symbol": "0700.HK",
       "name": "Tencent (0700.HK)",
       "region": "HK",
-      "price": 419.8,
-      "changePercent": -0.85
+      "price": 419.4,
+      "changePercent": -0.94
     }
   ]
 }
