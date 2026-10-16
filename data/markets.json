@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T16:00:46+08:00",
+  "updatedAt": "2026-10-16T17:01:10+08:00",
   "source": "yahoo-finance",
   "label": "Delayed public web quotes — educational demo, not investment advice",
   "markets": [
@@ -24,8 +24,8 @@
       "symbol": "^HSI",
       "name": "Hang Seng",
       "region": "HK",
-      "price": 24149.13,
-      "changePercent": 0.36
+      "price": 24186.83,
+      "changePercent": 0.52
     },
     {
       "id": "nikkei",
@@ -40,24 +40,24 @@
       "symbol": "^FTSE",
       "name": "FTSE 100",
       "region": "UK",
-      "price": 10826.15,
-      "changePercent": -0.13
+      "price": 10837.98,
+      "changePercent": -0.02
     },
     {
       "id": "stoxx50",
       "symbol": "^STOXX50E",
       "name": "Euro Stoxx 50",
       "region": "EU",
-      "price": 6189.2,
-      "changePercent": 0.34
+      "price": 6214.77,
+      "changePercent": 0.75
     },
     {
       "id": "0700.HK",
       "symbol": "0700.HK",
       "name": "Tencent (0700.HK)",
       "region": "HK",
-      "price": 417.2,
-      "changePercent": -0.14
+      "price": 417.8,
+      "changePercent": 0.0
     }
   ]
 }
